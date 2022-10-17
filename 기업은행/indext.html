@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 공통 */
+        a {
+            text-decoration: none !important;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        /* 헤더 부분 */
+        .header {
+            border-bottom: 1px solid blue;
+            background-color: azure;
+            margin: 0 auto;
+            max-width: 1400px;
+            display: flex; 
+            flex-direction:row;
+        }
+
+        .header h1 {
+            background-color: red;
+            width: 300px;
+            text-align: center;
+        }
+
+        .header .menu {
+            width: calc( 100% - 300px );
+        }
+
+        header div nav:nth-last-of-type(2) {
+            background-color: blue;
+        }
+
+        header div nav:nth-last-of-type(2) > ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header div nav:nth-last-of-type(1) {
+            background-color: yellow;
+        }
+
+        header div nav:nth-last-of-type(1) > ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: green;
+            margin-top: 10px;
+        }
+        
+        .bt_animation {
+            margin-bottom: 10px;
+        }
+
+        .bt_animation > a{
+            border: 1px solid black;
+        }
+
+        .bt_animation > a:nth-last-of-type(1){
+            background-color: yellow;
+        }
+
+        .bt_animation > a:nth-last-of-type(2){
+            background-color: blue;
+        }
+
+        .slider {
+            background-color: purple;
+            width: 100%;
+            height: 500px;
+        }
+
+        .wrap .wrap__menu {
+            background-color: aqua;
+            height: 80px;
+        }
+
+        .wrap .wrap__menu ul {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .wrap__slider {
+            background-color: gold;
+            height: 300px;
+            display: flex;
+        }
+
+        .wrap__slider div:nth-of-type(1) {
+            background-color: whitesmoke;
+            width: 70%;
+        }
+
+        
+        .wrap__slider ul {
+            background-color: blue;
+            height: 100%;
+            display: flex;
+        }
+
+        .wrap__slider ul li:nth-of-type(2) {
+            background-color: blueviolet;
+            height: 50%;
+        }
+
+        .wrap__slider ul li:nth-of-type(1) {
+            height: 50%;
+            background-color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+        <header class="header">
+            <h1>IBK 기업은행</h1>
+            <div class="menu">
+                <nav class="menu__first">
+                    <ul>
+                        <li>금융사기예방센터</li>
+                        <li>고객센터</li>
+                        <li>마이페이지</li>
+                        <li>정보공개</li>
+                        <li>은행소개</li>
+                        <li>IR</li>
+                        <li>영업점안내</li>
+                        <li>Global</li>
+                    </ul>
+                    <div class="menu__first__input">
+                        <input type="text" name="" id="">
+                    </div>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>개인뱅킹</li>
+                        <li>기업뱅킹</li>
+                        <li>금융상품</li>
+                        <li>금융정보</li>
+                        <li>카드</li>
+                        <a href="">전체메뉴</a>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- <div>
+                <h1>IBK 기업은행</h1>
+                    <div>
+                        <nav>
+                            <ul>
+                                <li>금융사기예방센터</li>
+                                <li>고객센터</li>
+                                <li>마이페이지</li>
+                                <li>정보공개</li>
+                                <li>은행소개</li>
+                                <li>IR</li>
+                                <li>영업점안내</li>
+                                <li>Global</li>
+                            </ul>
+                            <input type="text" name="" id="">
+                        </nav>
+                        <nav>
+                            <ul>
+                                <li>개인뱅킹</li>
+                                <li>기업뱅킹</li>
+                                <li>금융상품</li>
+                                <li>금융정보</li>
+                                <li>카드</li>
+                                <a href="">전체메뉴</a>
+                            </ul>
+                    </nav>
+                    </div>
+            </div> -->
+        </header>
+        <main class="wrap">
+            <section class="bt_animation">
+                <a href="">뱅킹로그인</a>
+                <a href="">인증센터</a>
+            </section>
+
+            <section class="slider">
+ 
+            </section>
+
+            <section class="wrap__menu">
+                <ul>
+                    <li>계좌조회</li>
+                    <li>카드조회</li>
+                    <li>카드등록</li>
+                    <li>환율조회</li>
+                    <li>소비자포털/민원</li>
+                    <li>상품공시실/약관</li>
+                    <li>서민금융</li>
+                    <li>IBK 부동산 매물광장</li>
+                </ul>
+            </section>
+
+            <section class="wrap__slider">
+                <div>
+                    화면
+                </div>
+                
+                <div>
+                    <ul>
+                        <li>알람</li>
+                        <li>이벤트</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="Wrap__cube">
+                <div>
+                    <ul>
+                        <li>IBK 큐브</li>
+                        <li>금융정보톡</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>새소식</li>
+                        <li>공고</li>
+                    </ul>
+                    <ul>
+                        <li>지급보증서</li>
+                        <li>잔액증명서</li>
+                        <li>이용시간</li>
+                        <li>수수료안내</li>
+                        <li>전자민원접수</li>
+                        <li>이메일상담</li>
+                        <li>IBK퇴직연금</li>
+                    </ul>
+                </div>
+            </section>
+
+
+        </main>
+</body>
+</html>
