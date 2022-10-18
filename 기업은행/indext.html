@@ -25,7 +25,7 @@
             border-bottom: 1px solid blue;
             background-color: azure;
             margin: 0 auto;
-            max-width: 1400px;
+            max-width: 1000px;
             display: flex; 
             flex-direction:row;
         }
@@ -114,6 +114,8 @@
             background-color: blue;
             height: 100%;
             display: flex;
+            flex-direction: column;
+            width: 300px;
         }
 
         .wrap__slider ul li:nth-of-type(2) {
@@ -122,8 +124,40 @@
         }
 
         .wrap__slider ul li:nth-of-type(1) {
+            background-color: red;
             height: 50%;
-            background-color: aqua;
+        }
+
+        .Wrap__cube{
+            display: flex;
+        }
+
+
+
+        .Wrap__cube__first li:nth-of-type(1){
+            background-color: purple;
+            height: 80px;
+            width: 150px;
+        }
+
+        .Wrap__cube__first li:nth-of-type(2){
+            background-color: rgb(238, 202, 155);
+            height: 80px;
+            width: 150px;
+        }
+
+        .Wrap__cube div ul:nth-of-type(1){
+            background-color: floralwhite;
+            height: 160px;
+
+        }
+
+        .Wrap__cube .news li:nth-of-type(1) {
+            background-color: blue;
+            height: 50%;
+        }
+        .Wrap__cube .news li:nth-of-type(2) {
+            background-color: brown;
         }
 
 
@@ -226,14 +260,14 @@
             </section>
 
             <section class="Wrap__cube">
-                <div>
+                <div class="Wrap__cube__first">
                     <ul>
                         <li>IBK 큐브</li>
                         <li>금융정보톡</li>
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="news">
                         <li>새소식</li>
                         <li>공고</li>
                     </ul>
