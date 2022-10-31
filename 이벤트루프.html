@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('시작')
+
+        setTimeout(function (){
+            console.log('중간');
+        }, 3000);
+
+        console.log('끝')
+
+         // 콜스택에 콘솔 로그 시작이 담기고
+         // 콜스택에 setTimeout이 담김 그 다음에 비동기적 함수 이니까 wep api에 담기고
+         // 콜스택에 console.log끝이 실행 그리고 어나미머스실행
+         //web api에 있던 함수는 콜백 큐에 가서 실행 이벤트루프가
+         //콜스택이 비어있는걸 확인하고 콜스택에 가서 실행
+
+        console.log('시작')
+
+        setTimeout(function (){
+        console.log('중간');
+        }, 0)
+
+        console.log('끝')
+
+        //결국 위랑 똑같이 진행됨 콜스택에 어나미머스가 쌓이고 콘솔실행
+        //콜스택에 어나미머스가 쌓이고 함수 실행 이때 비동기적 함수이니
+        //web api에 가서 대기
+        //다음 콘솔 함수가 위랑 똑같이 실행된다음에
+        //web api에 있던 함수가 콜스택 큐에 들어간후 콜스택이 비었는지 확인
+        //콜스택에서 함수 실행
+    </script>
+</body>
+</html>

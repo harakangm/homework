@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('시작')
+
+        setTimeout(function() {
+            console.log('중간')
+        },0)
+
+        //프로미스는 동기이다 댄을 만나는 순간 비동기로 동작함
+        Promise.resolve().then(function() {
+            console.log('프로미스')
+        })
+
+        console.log('끝')
+
+        //프로미스가 먼저 콜스택에 들어감
+        //그후에 중간
+
+        //콜백큐는 테스크 큐와 마이크로 큐 에니메이션 프레임로 이루어져있다
+
+    
+
+         
+    </script>
+</body>
+</html>

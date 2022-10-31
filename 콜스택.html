@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 콜스택
+        function first() {
+         second();
+         console.log('첫번째')  
+        }
+        function second() {
+            third()
+            console.log('두 번째')
+        }
+        function third() {
+            console.log('세 번째')
+        }
+
+        first(); // 첫번쨰 함수 호출후 함수 안에 second함수가 호출됨 그다음 써드 호출
+
+        third(); // 써드 함수 호출
+
+        //annymous => 퍼스트가 호출 => 세컨드 호출 => 써드 호출 => 그다음 
+        //콘솔로그 세번째가 실행되고 그위로 두번째 첫번째가 호출됨
+        // 콜스택 밑에서부터 쌓이면서 실행
+    
+    </script>
+</body>
+</html>
